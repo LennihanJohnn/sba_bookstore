@@ -27,9 +27,21 @@
 - bundle --without production
 - heroku create
 - git push heroku master
-- heroku run rake db:migrate
-- heroku open
+- heroku run rake db:migrate *(fails)*
 
 *heroku ready*
 
+- git push heroku master
+- heroku run rake db:migrate
+- go install elasticbox before seeding
+- heroku run rake db:seed *(fails)*
+
 *oops forget about mysql and heroku crashes when sqllite is detected*
+
+- heroku run rake db:seed *(works)*
+- heroku open *(fails, expecting local elasticsearch)*
+- heroku addons:create bonsai
+- heroku config:set ELASTICSEARCH_URL=`heroku config:get BONSAI_URL`
+- heroku run rake searchkick:reindex CLASS=Book
+
+*oops setup bonsai for Heroku*
