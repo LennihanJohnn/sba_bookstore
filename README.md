@@ -16,3 +16,8 @@
 - rake searchkick:reindex CLASS=Book
 
 *searchkick and searchable models*
+
+- bundle
+- Ctrl + Shift + R browser for app/assets
+
+*typeahead autocompletion*

@@ -1,3 +1,3 @@
 class Book < ActiveRecord::Base
-  searchkick
+  searchkick autocomplete: ['title']
 end

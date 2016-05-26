@@ -4,10 +4,16 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    if params[:query]
+    if params[:query] && params[:query].present?
       @books = Book.search(params[:query]).records
     else
       @books = Book.all
+    end
+  end
+
+  def autocomplete
+    render json: Book.search(params[:query]).map do |book|
+      { title: book.title, value: book.id }
     end
   end
 

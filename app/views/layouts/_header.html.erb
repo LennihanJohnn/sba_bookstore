@@ -4,7 +4,7 @@
       <%= link_to "BookStore", root_path, class: 'navbar-brand' %>
       <%= form_tag({ url: books_path }, { class: 'navbar-form navbar-right book-search-form', method: :get }) do |f| %>
         <div class="form-group">
-          <%= text_field_tag :query, params[:query], class: 'form-control book-search', placeholder: 'Search' %>
+          <%= text_field_tag :query, params[:query], class: 'form-control typeahead book-search', placeholder: 'Search' %>
         </div>
       <% end %>
     </div>
