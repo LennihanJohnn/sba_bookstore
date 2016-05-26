@@ -23,3 +23,11 @@
 *typeahead autocompletion*
 
 *added font-awesome icon to search bar*
+
+- bundle --without production
+- heroku create
+- git push heroku master
+- heroku run rake db:migrate
+- heroku open
+
+*heroku ready*
