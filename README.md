@@ -31,3 +31,5 @@
 - heroku open
 
 *heroku ready*
+
+*oops forget about mysql and heroku crashes when sqllite is detected*
