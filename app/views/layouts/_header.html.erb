@@ -2,11 +2,11 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <%= link_to "BookStore", root_path, class: 'navbar-brand' %>
-      <form class="navbar-form navbar-right" role="search">
+      <%= form_tag({ url: books_path }, { class: 'navbar-form navbar-right book-search-form', method: :get }) do |f| %>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <%= text_field_tag :query, params[:query], class: 'form-control book-search', placeholder: 'Search' %>
         </div>
-      </form>
+      <% end %>
     </div>
 
   </nav>

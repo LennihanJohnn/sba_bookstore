@@ -15,3 +15,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).on('keyup', 'input', function(e){
+  if(e.keyCode == 13)
+    $(this).trigger("enter");
+})

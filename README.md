@@ -11,3 +11,8 @@
 - bundle
 
 *bootstrap, font-awesome and basic layout & styles*
+
+- bundle
+- rake searchkick:reindex CLASS=Book
+
+*searchkick and searchable models*
