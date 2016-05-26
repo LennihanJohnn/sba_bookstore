@@ -1,4 +1,4 @@
-# SBA Bookstore
+# SBA Bookstore: https://tranquil-wildwood-84708.herokuapp.com/
 
 - rails new sba_bookstore
 
@@ -21,3 +21,5 @@
 - Ctrl + Shift + R browser for app/assets
 
 *typeahead autocompletion*
+
+*added font-awesome icon to search bar*
