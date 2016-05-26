@@ -1,4 +1,6 @@
-# SBA Bookstore: https://tranquil-wildwood-84708.herokuapp.com/
+# SBA Bookstore
+
+### https://sba-bookstore.herokuapp.com/
 
 - rails new sba_bookstore
 
