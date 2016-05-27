@@ -57,3 +57,9 @@
 *styling it up!*
 
 *ajax searching*
+
+
+- echo "Book.import force: true" | rails c
+- heroku run echo "Book.import force: true" | rails c
+
+*(elasticsearch-rails requires this operation to perform CRUD)*
