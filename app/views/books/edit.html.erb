@@ -3,6 +3,6 @@
   <h3 class="inline"><%= @book.title %></h3>
 </div>
 
-<%= image_tag @book.image_url, class: 'book-image pull-right' %>
+<%= image_tag @book.image_url, class: 'book-image pull-right thumbnail' %>
 
 <%= render 'form', submit: { text: "Update Book", method: :put, disable_with: "#{icon('refresh', 'Updating...', class: 'fa-spin').html_safe}" } %>
