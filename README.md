@@ -47,3 +47,11 @@
 - heroku run rake searchkick:reindex CLASS=Book
 
 *oops setup bonsai for Heroku*
+
+- git remote set-url heroku https://git.heroku.com/sba-bookstore.git
+
+*rename heroku repository*
+
+- bundle
+
+*styling it up!*

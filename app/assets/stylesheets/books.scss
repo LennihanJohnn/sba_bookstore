@@ -7,11 +7,43 @@
 }
 
 .book-image {
-  width: 15%;
+  min-width: 225px;
+  width: 30%;
 }
 
 .book-info {
-  width: 75%;
+  width: 45%;
+  padding: 0 15px;
   display: inline-block;
   vertical-align: top;
+}
+
+.book-form {
+  width: 50%;
+  float: left;
+}
+
+.book-actions {
+  padding: 0 10px;
+}
+
+#main-container .row > .book {
+  margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+ .book-form {
+   width: 75%;
+ }
+}
+
+@media (max-width: 767px) {
+ .book-form {
+ }
+}
+
+@media (max-width: 500px) {
+ .book-form {
+   width: 100%;
+ }
 }

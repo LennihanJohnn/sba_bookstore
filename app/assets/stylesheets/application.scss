@@ -11,6 +11,8 @@
  * file per style scope.
  *
  *= require twitter/typeahead
+ *= require bootstrap-overrides
+ *= require sweetalert
  *= require_tree .
  *= require_self
  */
@@ -21,7 +23,41 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+body {
+  y-overflow: scroll;
+}
+
+textarea {
+  resize: vertical;
+}
 
 #main-container {
   margin-top: 50px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-top: 100px;
+  p {
+    margin: 10px 0;
+  }
+}
+
+.errors {
+
+}
+
+.inline {
+  display: inline;
+}
+
+.center-block {
+  margin: 0 auto;
+}
+
+.width-fifthy {
+  width: 50%;
 }

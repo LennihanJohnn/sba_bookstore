@@ -15,6 +15,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require twitter/typeahead
+//= require sweetalert
+//= require sweet-alert-confirm
 //= require_tree .
 
 

@@ -1,16 +1,23 @@
 <header>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <%= link_to "BookStore", root_path, class: 'navbar-brand' %>
-      <%= form_tag({ url: books_path }, { class: 'navbar-form navbar-right book-search-form', method: :get }) do |f| %>
-        <div class="input-group margin-bottom-sm">
-          <span class="input-group-addon">
-            <i class="fa fa-search fa-fw"></i>
-          </span>
-          <%= text_field_tag :query, params[:query], class: 'form-control typeahead book-search', placeholder: 'Search' %>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to icon('book', 'BookStore'), root_path, class: 'navbar-brand' %>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="nav navbar-nav navbar-right">
+          <%= render 'layouts/search' %>
         </div>
-      <% end %>
+        <div class="nav navbar-nav navbar-right">
+          <%= link_to icon('plus', 'Add Book'), new_book_path, class: 'btn btn-default btn-md navbar-btn', style: 'vertical-align: bottom;' %>
+        </div>
+      </div>
     </div>
-
   </nav>
 </header>

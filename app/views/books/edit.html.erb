@@ -1,6 +1,8 @@
-<h1>Editing Book</h1>
+<div class="page-header">
+  <h1 class="inline">Editing:&nbsp;</h1>
+  <h3 class="inline"><%= @book.title %></h3>
+</div>
 
-<%= render 'form' %>
+<%= image_tag @book.image_url, class: 'book-image pull-right' %>
 
-<%= link_to 'Show', @book %> |
-<%= link_to 'Back', books_path %>
+<%= render 'form', submit: { text: "Update Book", method: :put, disable_with: "#{icon('refresh', 'Updating...', class: 'fa-spin').html_safe}" } %>
